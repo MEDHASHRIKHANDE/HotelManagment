@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Payment Gateway</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+	.container{
+    	margin: 20px;
+    }
+</style>
+</head>
+<body>
+  <div class="container-fluid">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-2">
+    </div>
+    <div class="col-lg-6 col-md-8 col-sm-12">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#home" class="nav-link active" data-toggle="tab"><i class="fa fa-credit-card"></i> Credit Card</a>
+        </li>
+        <li class="nav-item">
+            <a href="#profile" class="nav-link" data-toggle="tab"><i class="fa fa-paypal"></i>  Paypal</a>
+        </li>
+        <li class="nav-item">
+            <a href="#messages" class="nav-link" data-toggle="tab"><i class="fa fa-university"></i>  Bank Transfer</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="home">
+          <p class="alert alert-success">Some text success or error</p>
+          <form role="form">
+          <div class="form-group">
+            <label for="username">Full name (on the card)</label>
+            <input type="text" class="form-control" name="username" placeholder="" required="">
+          </div> <!-- form-group.// -->
+
+          <div class="form-group">
+            <label for="cardNumber">Card number</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="cardNumber" placeholder="">
+              <div class="input-group-append">
+                <span class="input-group-text text-muted">
+                  <i class="fa fa-cc-visa"></i>   <i class="fa fa-cc-amex"></i>  
+                  <i class="fa fa-cc-mastercard"></i>
+                </span>
+              </div>
+            </div>
+          </div> <!-- form-group.// -->
+
+          <div class="row">
+              <div class="col-sm-8">
+                  <div class="form-group">
+                      <label><span class="hidden-xs">Expiration</span> </label>
+                    <div class="input-group">
+                      <input type="number" class="form-control" placeholder="MM" name="">
+                        <input type="number" class="form-control" placeholder="YY" name="">
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="form-group">
+                      <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                      <input type="number" class="form-control" required="">
+                  </div> <!-- form-group.// -->
+              </div>
+          </div> <!-- row.// -->
+          <button class="subscribe btn btn-secondary btn-block" type="button"> Confirm  </button>
+
+								
+          </form>
+        </div> <!-- tab-pane.// -->
+        <div class="tab-pane fade" id="profile">
+          <p class="alert alert-success">Some text success or error</p><br>
+          <p>Paypal is easiest way to pay online</p>
+          <p>
+            <a src="https://www.paypal.com/in/signin" class="nav-link" data-toggle="tab">
+          <button type="button" class="btn btn-secondary"> <i class="fa fa-paypal" aria-hidden="true"></i> Log in my Paypal </button></a>
+          </p>
+          <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+
+
+          </div>
+
+
+
+        <div class="tab-pane fade" id="messages">
+          <p class="alert alert-success">Some text success or error</p><br>
+          <h2>Bank Transfer</h2>
+          <dl class="param">
+            <dt>SELECT BANK: </dt>
+            <div class="paymentWrap">
+							<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+                <div class="row">
+                  <div class="col-lg-3">
+					            <label class="btn paymentMethod active">
+					            	<div class="method visa">
+					                <input type="radio" name="options" checked>
+                          <img src="/home/pif/Desktop/HTML/Bootstrap layouts/hotel/icici.jpeg" style="width:70%;height:40%;" alt="">
+                          </div>
+					            </label>
+                    </div>
+                      <div class="col-lg-3">
+					            <label class="btn paymentMethod">
+					            	<div class="method master-card">
+					                <input type="radio" name="options">
+                          <img src="/home/pif/Desktop/HTML/Bootstrap layouts/hotel/sbilogo.jpg" style="width:70%;height:40%;" alt="">
+                          </div>
+					            </label>
+                    </div>
+                      <div class="col-lg-3">
+					            <label class="btn paymentMethod">
+				            		<div class="method amex">
+					                <input type="radio" name="options">
+                          <img src="/home/pif/Desktop/HTML/Bootstrap layouts/hotel/idbi.jpg" style="width:70%;height:40%;" alt="">
+                          </div>
+					            </label>
+                    </div>
+                      <div class="col-lg-3">
+					             <label class="btn paymentMethod">
+				             		<div class="method vishwa">
+					                <input type="radio" name="options">
+                          <img src="/home/pif/Desktop/HTML/Bootstrap layouts/hotel/hdfc.jpeg" style="width:70%;height:40%;" alt="">
+                          </div>
+					            </label>
+                    </div>
+                  </div>
+
+					        </div>
+						</div>
+            <form class="form">
+              <div class="form-group">
+                <label for="username">Full name account holder</label>
+                <div class="input-group-append">
+                  <span class="input-group-text text-muted">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                <input type="text" class="form-control" name="username" placeholder="Name" required="">
+              </div>
+              <div class="form-group">
+                <label for="username">username</label>
+                <div class="input-group-append">
+                  <span class="input-group-text text-muted">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                  </span>
+                <input type="text" class="form-control" name="username" placeholder="username" required="">
+              </div>
+              <div class="form-group">
+                <label for="username">Password</label>
+                <div class="input-group-append">
+                  <span class="input-group-text text-muted">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                  </span>
+                <input type="password" class="form-control" name="password" placeholder="password" required="">
+              </div>
+            </div>
+                <button type="button" class="btn btn-secondary" style="width:40%;"> Log In</button>
+              </div>
+            </form>
+
+          <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div> <!-- tab-pane.// -->
+          </div> <!-- tab-content .// -->
+
+					<div class="text-center">
+						<a class="text-dark" href="bproject.html"><b>GO TO HOME</b></a>
+					</div>
+
+    </div>
+    <div class="col-lg-3 col-md-2">
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+<style media="screen">
+  #home
+  {
+  height: auto;
+  }
+
+  .padding-for-nav
+  {
+    padding-top: 0px;
+    text-align: center;
+    color: #ffffff;
+    min-height: 0px;
+  }
+  #service
+  {
+    padding-top: 10px;
+    margin-top: 25px;
+  }
+  h1
+  {
+    font-family: 'Lobster', cursive;
+  }
+  #chef
+  {
+    margin-top: 30px;
+  }
+
+ #img-2-1:hover
+  {
+    color: #82E0AA   ;  /*#76D7C4*/
+  }
+
+  /* about us*/
+
+  .card {
+    border-radius: 15px;
+    box-shadow: 1px 5px 50px grey;
+    margin: 10px;
+  }
+  .card:hover{
+    box-shadow: 1px 5px 30px black;
+  }
+  .card-img{
+    border-radius: 15px;
+  }
+
+  /* italin menu*/
+  .food_right{
+        background-image: url("img/italian/image30.jpg");
+        width: 100%;
+        height: 100vh;
+        background-color: pink;
+        float: left;
+        padding-top: 10%;
+        padding-left: 7vw;
+        background-size: cover;
+      }
+      .main{
+        margin-top:3vh;
+        float: right;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+</style>
+  </head>
+  <body>
+    <div class="sticky-top">
+    <div class="container-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-2">
+          <img src="img/logo.jpg"  class="w-100" alt="">
+        </div>
+        <div class="col-lg-11 col-md-10 col-sm-10  mt-3 ">
+          <h1 style="font-family:'Lobster','cursive'">Global Fusion</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container ">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!--for responsive menu-->
+           <button class="navbar-toggler " data-toggle="collapse" data-target="#collapse_target">
+             <span class="navbar-toggler-icon "></span>
+           </button>
+
+           <!-- manu bar-->
+           <div class="collapse navbar-collapse" id="collapse_target">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="#about us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#menu">Menu</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link "  href="reserp.html">Reservation</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link "  href="#service">Services</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link "  href="#gallery">Gallary</a>
+            </li>
+            &nbsp;
+            <a href="loginp.html"type="button" class="btn btn-secondary" name="button">Login</a>
+          </ul>
+          </div>
+    </nav>
+    </div>
+  </div>
+</div>
+    <!--slider-->
+    <div class="container">
+    <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slider5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<h2 class="text-secondary"><b>GLOBAL FUSION</b> </h2>-->
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+
+              <!--<h4 class="text-light">EAT HEALTHY LOOK HEALTHY</h4>-->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider7.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <br>
+        <!-- home content-->
+        <div class="container">
+          <div class="row">
+          <div class="col-lg-4  text-center" style="padding:30px;" >
+            <i  style="font-size:100px; color:grey;"class="fa fa-users" aria-hidden="true"></i>
+            <h4>Cozy, spacious area!</h4>
+            <h6>Enjoy our individual booths, that are spread across our spacious, well-lit halls…</h6>
+          </div>
+          <div class="col-lg-4  text-center" style="padding:30px;">
+            <i  style="font-size:100px; color:grey;"class="fa fa-coffee" aria-hidden="true"></i>
+            <h4>Beverages for all tastes</h4>
+            <h6>From roasted Ethiopian coffee to any alco- hol beverage, our bar menu features it all…</h6>
+          </div>
+          <div class="col-lg-4 text-center" style="padding:30px;">
+            <i  style="font-size:100px; color:grey;"class="fa fa-cutlery" aria-hidden="true"></i>
+            <h4>Diverse menu</h4>
+            <h6>We have both meat and vegetarian dishes here, on par with delicious desserts!</h6>
+          </div>
+        </div>
+        </div>
+        <!--home image-->
+        <div class="container my-3">
+          <img src="img/img1.jpeg" class="w-100"alt="">
+        </div>
+
+        <!-- ABOUT US -->
+        
+            <div id="about us">
+            <div class="container-fluid">
+            <div class="container">
+              <center><h1  class="text-secondary"style="font-family: 'Lobster', 'cursive';justify-content:center;font-size:50px;margin:40px;text-shadow: 2px 2px gray;">About Us</h1></center>
+            <div class="row">
+            <div class="card mb-3" style="max-width:540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="img/MD image.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size:25px;font-family: 'Lobster', 'cursive';margin-left:50px;">Enjoy In Our Hotel</h5>
+                    <p class="card-text">As a diverse country, India showcases a contrast of cooking styles in its varied regions.
+                      Bringing together these distinct styles to Mumbai, Masala Bay at Taj Lands End, has
+                      meticulously crafted the menu to reflect the culinary traditions of authentic Indian cuisine.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="img/add664d50da127b5099ff308ff1d5e85.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size:25px;font-family: 'Lobster', cursive;margin-left:50px;">Enjoy In Our Hotel</h5>
+                    <p class="card-text">As a diverse country, India showcases a contrast of cooking styles in its varied regions.
+                      Bringing together these distinct styles to Mumbai, Masala Bay at Taj Lands End, has
+                      meticulously crafted the menu to reflect the culinary traditions of authentic Indian cuisine.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="img/4efbaf303e1f9fe138636cbb0ea89fe9.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size:25px;font-family: 'Lobster', cursive;margin-left:50px;">Enjoy In Our Hotel</h5>
+                    <p class="card-text">As a diverse country, India showcases a contrast of cooking styles in its varied regions.
+                      Bringing together these distinct styles to Mumbai, Masala Bay at Taj Lands End, has
+                      meticulously crafted the menu to reflect the culinary traditions of authentic Indian cuisine.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="img/about3.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size:25px;font-family: 'Lobster', cursive;margin-left:50px;">Enjoy In Our Hotel</h5>
+                    <p class="card-text">As a diverse country, India showcases a contrast of cooking styles in its varied regions.
+                      Bringing together these distinct styles to Mumbai, Masala Bay at Taj Lands End, has
+                      meticulously crafted the menu to reflect the culinary traditions of authentic Indian cuisine.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="img/MD image6.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size:25px;font-family: 'Lobster', cursive;margin-left:50px;">Enjoy In Our Hotel</h5>
+                    <p class="card-text">As a diverse country, India showcases a contrast of cooking styles in its varied regions.
+                      Bringing together these distinct styles to Mumbai, Masala Bay at Taj Lands End, has
+                      meticulously crafted the menu to reflect the culinary traditions of authentic Indian cuisine.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="img/e855de1266e712f7a8c220452f2e6459.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size:25px;font-family: 'Lobster', cursive;margin-left:50px;">Enjoy In Our Hotel</h5>
+                    <p class="card-text">As a diverse country, India showcases a contrast of cooking styles in its varied regions.
+                      Bringing together these distinct styles to Mumbai, Masala Bay at Taj Lands End, has
+                      meticulously crafted the menu to reflect the culinary traditions of authentic Indian cuisine.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+        <!--about us end-->
+
+<br>
+        <!-- menu-->
+
+    <div class="container-fluid" id="menu">
+    <div class="container">
+     <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-4">
+         <div class="food_right">
+           <h1 style="margin-top:10vh;"><i><a href="Italian Food"style="color:white;text-decoration:none;">Food Menu</a></i></h1>
+         </div>
+       </div>
+       <div class="col-lg-8s col-md-8 col-sm-8 main">
+         <center><h1>Food Menu</h1></center>
+         <div class="row">
+           <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="card" style="width:100%;">
+            <img src="img/italian/image1.jpg" width="100%" alt="">
+            <div class="card-body">
+              <h4 style="margin-left:1vw;">Italian</h4>
+              <i class="fa fa-star" style="color:yellow; margin-left:1vw;"></i>
+              <i class="fa fa-star" style="color:yellow;"></i>
+              <i class="fa fa-star" style="color:yellow;"></i>
+              <i class="fa fa-star" style="color:yellow;"></i>
+              <i class="fa fa-star-half-o" style="color:yellow;"></i><br>
+              <input style="margin-left:1vw;"type="checkbox" name="" value="Add categoires">Add Cart
+              <p style="margin-left:1vw;"> Price:  <i class="fa fa-inr" aria-hidden="true"></i>400</p>
+            </div>
+            </div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-4">
+             <div class="card" style="width:100%">
+             <img src="img/italian/image22.jpg" width="100%" alt="">
+             <div class="card-body">
+               <h4 style="margin-left:1vw;">Italian</h4>
+               <i class="fa fa-star" style="color:yellow; margin-left:1vw;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star-half-o" style="color:yellow;"></i><br>
+               <input style="margin-left:1vw;"type="checkbox" name="" value="Add categoires">Add Cart
+               <p style="margin-left:1vw;"> Price:  <i class="fa fa-inr" aria-hidden="true"></i>200</p>
+             </div>
+             </div>
+           </div>
+
+           <div class="col-lg-4 col-md-4 col-sm-4">
+             <div class="card" style="width:100%">
+             <img src="img/italian/image13.jpg" width="100%" alt="">
+             <div class="card-body">
+               <h4 style="margin-left:1vw;">Italian</h4>
+               <i class="fa fa-star" style="color:yellow; margin-left:1vw;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star-half-o" style="color:yellow;"></i><br>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <input style="margin-left:1vw;"type="checkbox" name="" value="Add categoires">Add Cart
+               <p style="margin-left:1vw;"> Price:  <i class="fa fa-inr" aria-hidden="true"></i>500</p>
+             </div>
+             </div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-4">
+             <div class="card" style="width:100%">
+             <img src="img/italian/image19.jpg" width="100%" alt="">
+             <div class="card-body">
+               <h4 style="margin-left:1vw;">Indian</h4>
+               <i class="fa fa-star" style="color:yellow; margin-left:1vw;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star-half-o" style="color:yellow;"></i><br>
+               <input style="margin-left:1vw;"type="checkbox" name="" value="Add categoires">Add Cart
+               <p style="margin-left:1vw;"> Price:  <i class="fa fa-inr" aria-hidden="true"></i>200</p>
+             </div>
+             </div>
+           </div>
+           <div class="col-lg-4 col-md-4 col-sm-4">
+             <div class="card" style="width:100%">
+                 <img src="img/italian/image24.jpg" width="100%" alt="">
+             <div class="card-body">
+               <h4 style="margin-left:1vw;">Indian</h4>
+               <i class="fa fa-star" style="color:yellow; margin-left:1vw;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star-half-o" style="color:yellow;"></i><br>
+               <input style="margin-left:1vw;"type="checkbox" name="" value="Add categoires">Add Cart
+               <p style="margin-left:1vw;"> Price:  <i class="fa fa-inr" aria-hidden="true"></i>300</p>
+             </div>
+             </div>
+           </div>
+
+           <div class="col-lg-4 col-md-4 col-sm-4">
+             <div class="card" style="width:100%">
+                 <img src="img/italian/image18.jpg" width="100%" alt="">
+             <div class="card-body">
+               <h4 style="margin-left:1vw;">Indian</h4>
+               <i class="fa fa-star" style="color:yellow; margin-left:1vw;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star" style="color:yellow;"></i>
+               <i class="fa fa-star-half-o" style="color:yellow;"></i><br>
+               <input style="margin-left:1vw;"type="checkbox" name="" value="Add categoires">Add Cart
+               <p style="margin-left:1vw;"> Price:  <i class="fa fa-inr" aria-hidden="true"></i>400</p>
+             </div>
+             </div>
+           </div>
+           <a type="button" name="button"style="margin-left:22vw;background-color:grey;font-size:2vw;color:white;padding:1vw;border-radius:3vw;text-decoration:none;" href="file:///home/pif/BStrap/pay.html">Place Order
+           </a>
+
+         </div>
+       </div>
+       </div>
+       </div>
+       <!--menu end-->
+
+
+
+        <!--services-->
+
+<div class="container" id="service">
+<!--service-->
+    <div class="row padding-for-nav" >
+      <div class="col-lg-12 text-secondary">
+        <h1><u>Our Service</u></h1>
+<div class="card-deck" style="margin-top:25px;">
+  <div class="card text-dark col-lg-4 col-md-4 col-ms-1 ">
+     <i class="fa fa-cutlery" style="font-size: 3.5em; margin-top:20px;" id="img-2-1"></i>
+    <div class="card-body text-center" >
+      <h5 class="card-title"><b><i>Best Offers</i></b></h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="card text-dark col-lg-4 col-md-4 col-ms-1">
+     <i class="fa fa-smile-o"style="font-size: 3.5em; margin-top:20px;" id="img-2-1"></i>
+    <div class="card-body text-center">
+      <h5 class="card-title"><b><i>Happy People</i></b></h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="card text-dark col-lg-4 col-md-4 col-ms-1">
+     <i class="fa fa-sticky-note-o" style="font-size: 3.5em; margin-top:20px;" id="img-2-1"></i>
+    <div class="card-body text-center">
+      <h5 class="card-title"><b><i>Tips Recipes</i></b></h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="card-deck">
+  <div class="card text-dark  col-lg-4 col-md-4 col-ms-1">
+     <i class="fa fa-mobile" style="font-size: 3.5em; margin-top:20px;" id="img-2-1"></i>
+    <div class="card-body text-center">
+      <h5 class="card-title"><b><i>Online order</i></b></h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="card text-dark col-lg-4 col-md-4 col-ms-1">
+    <i class="fa fa-truck" style="font-size: 3.5em; margin-top:20px;" id="img-2-1"></i>
+    <div class="card-body text-center">
+      <h5 class="card-title"><b><i>Home Delivery</i></b></h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="card text-dark col-lg-4 col-md-4 col-ms-1">
+    <i class="fa fa-money" style="font-size: 3.5em; margin-top:20px;" id="img-2-1"></i>
+    <div class="card-body text-center">
+      <h5 class="card-title"><b><i>Low Price</i></b></h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <div class="row padding-for-nav" id="Service">
+    <div class="col-lg-12 text-secondary" id="chef">
+      <h1><u>Our Chef</u></h1>
+      <div class="card-deck" style="margin-top:20px;">
+        <div class="card text-dark  col-lg-4 col-md-4 col-ms-1">
+           <img src="img/chef1.com" class="card-img-top" alt="..." style="height:50vh; width: auto;">
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <h3><b>Priyanka Dubey</b></h3>
+              <h4><b><i>Head Chef</i></b></h4></h5>
+              <i class="fa fa-star" style=" color:yellow; font-size:1.2em;"></i>
+              <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+              <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+              <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+              <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i><br>
+            <button type="button" class="btn btn-link text-dark" name="button">Read More</button>
+          </div>
+        </div>
+        <div class="card text-dark  col-lg-4 col-md-4 col-ms-1" >
+          <img src="img/chef2.jpeg" class="card-img-top" alt="..."style="height:50vh;width: auto">
+          <div class="card-body text-center">
+            <h3><b>Mehtab Shaikh</b></h3>
+            <h4><b><i>Sous Chef</i></b></h4></h5>
+            <i class="fa fa-star" style=" color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star-half-o" style="color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star-o" style="color:yellow; font-size:1.2em;"></i><br>
+          <button type="button" class="btn btn-link text-dark" name="button">Read More</button>
+          </div>
+        </div>
+        <div class="card text-dark  col-lg-4 col-md-4 col-ms-1">
+          <img src="img/chef3.jpeg" class="card-img-top" alt="..." style="height:50vh;width: auto">
+          <div class="card-body text-center">
+            <h3><b>Shailesh Salvi<b></h3>
+            <h4><b><i>Vegetable chef</i></b></h4></h5>
+            <i class="fa fa-star" style=" color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star" style="color:yellow; font-size:1.2em;"></i>
+            <i class="fa fa-star-half-o" style="color:yellow; font-size:1.2em;"></i><br>
+          <button type="button" class="btn btn-link text-dark" name="button">Read More</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+        <!-- Gallary div-->
+
+          <div id="gallery">
+      <div class="container bg-light" style="font-family:'Lobster','cursive'; padding:50px;">
+          <h1 class="text-center text-secondary">Eat Healthy And Delicious Food From Our Hotel</h1>
+      </div>
+      <div class="text-center text-secondary">
+
+        <h3 style="font-family:'Lobster','cursive'; font-size:50px;">Gallary</h3>
+
+      </div>
+          <div class="container">
+          <div class="row bg- light" style="padding:30px;">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card " style="margin-left:30px;">
+             <img src="img/gallery1.jpg"style="width:100%;height:100%;" class="card-img-top" alt="...">
+
+
+             </div>
+
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="margin-left:30px">
+             <img src="img/gallery2.jpg" style="width:100%;height:100%;"class="card-img-top" alt="...">
+
+
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="margin-left:30px">
+             <img src="img/gallery5.jpg " style="width:100%;height:100%;"class="card-img-top" alt="...">
+
+
+             </div>
+          </div>
+        </div>
+        <div class="row bg- light" style="padding:30px;">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="margin-left:30px;">
+             <img src="img/gallery7.jpeg " style="width:100%;height:100%;"class="card-img-top" alt="...">
+
+
+             </div>
+
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="margin-left:30px;">
+             <img src="img/gallery8.jpg " style="width:100%;height:100%;"class="card-img-top" alt="...">
+
+
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="margin-left:30px;">
+             <img src="img/gallery9.jpg " style="width:100%;height:100%;"class="card-img-top" alt="...">
+
+
+             </div>
+          </div>
+        </div>
+        <div class="row bg- light" style="padding:30px;">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="width: ;height:;margin-left:30px;">
+             <img src="img/gallery11.jpg "style="width:100%;height:100%;" class="card-img-top" alt="...">
+
+
+             </div>
+
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="width: ;height:;margin-left:30px;">
+             <img src="img/gallery12.jpg " style="width:100%;height:100%;"class="card-img-top" alt="...">
+
+
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="width: ;height:;margin-left:30px;">
+             <img src="img/gallery13.jpg "style="width:100%;height:100%;" class="card-img-top" alt="...">
+
+           </div>
+             </div>
+          </div>
+        </div>
+          <div class="container">
+          <div class="row"style="margin-top:40px;">
+            <div class="col-lg-12">
+              <div class="card">
+            <img src="img/Foot.jpg" style="width: 100%;"alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+      <!-- footer-->
+      <div class="container-fluid  bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 bg-secondary">
+            <div class="row">
+              <div class="col-lg-1">
+
+              </div>
+                <div class="col-lg-4  text-light text-center" style="padding:20px;">
+                  <h3 class="text-center">Address Info</h3>
+                  <br>
+                  <h6> <i class="fa fa-map-marker" aria-hidden="true"></i>  64d canal street TT 3356 Newyork, NY.</h6>
+                  <h6> <i class="fa fa-phone" aria-hidden="true"></i>  +1(12) 123 456 789</h6>
+                  <h6><i class="fa fa-envelope" aria-hidden="true"></i>  info@example.com </h6>
+                  <hr>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+                  <div class="col-lg-4 text-light text-center" style="padding:20px;">
+                    <h3>Links</h3>
+                    <br>
+                <a class="text-light" href="#"><h6>&nbsp;&nbsp;<i style="font-size:20px;" class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;facebook</h6></a>
+                <a  class="text-light"href="#"><h6><i style="font-size:20px;" class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;  Email</h6></a>
+                <a  class="text-light"href="#"><h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size:20px;" class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Play store</h6></a>
+                    <hr>
+                  </div>
+              <div class="col-lg-1">
+                <!-- for spacing-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container bg-secondary text-center text-light">
+            Copyright (c) 2019 Copyright Holder All Rights Reserved.
+            <hr>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
